@@ -16,13 +16,13 @@ window.PORTFOLIO_DATA = {
 
   // 2. DATA PROFIL PRIBADI
   profile: {
-    name: "Arya Pratama",
-    initials: "AP",
+    name: "Ade Alrizal",
+    initials: "AA",
     photo: "assets/profile-placeholder.svg", // Bisa diganti dengan foto asli (mis. "assets/foto-profil.webp")
     age: 26,
-    email: "arya.pratama@email.com",
-    whatsapp: "6281234567890", // Gunakan kode negara tanpa tanda +
-    whatsappDisplay: "+62 812-3456-7890",
+    email: "adealrizal15@gmail.com",
+    whatsapp: "6285199847664", // Gunakan kode negara tanpa tanda +
+    whatsappDisplay: "0851-9984-7664",
     location: {
       id: "Jakarta Selatan, Indonesia",
       en: "South Jakarta, Indonesia"
@@ -51,12 +51,12 @@ window.PORTFOLIO_DATA = {
     },
     about: {
       id: [
-        "Halo! Saya Arya Pratama, seorang Senior Full-Stack Web Developer dan UI/UX Designer dengan pengalaman lebih dari 5 tahun dalam merancang serta mengembangkan aplikasi web skala enterprise maupun startup.",
+        "Halo! Saya Ade Alrizal, seorang Senior Full-Stack Web Developer dan UI/UX Designer dengan pengalaman lebih dari 5 tahun dalam merancang serta mengembangkan aplikasi web skala enterprise maupun startup.",
         "Saya menggabungkan keahlian rekayasa perangkat lunak modern (JavaScript/TypeScript, React, Node.js, dan arsitektur Cloud) dengan kepekaan desain visual untuk menciptakan solusi yang tidak hanya cepat dan aman, tetapi juga menyenangkan saat digunakan.",
         "Di luar jam kerja, saya aktif berkontribusi pada proyek open-source, menulis artikel teknis tentang optimasi performa web, serta membimbing developer muda dalam komunitas teknologi lokal."
       ],
       en: [
-        "Hello! I'm Arya Pratama, a Senior Full-Stack Web Developer and UI/UX Designer with over 5 years of experience architecting and delivering enterprise and startup web applications.",
+        "Hello! I'm Ade Alrizal, a Senior Full-Stack Web Developer and UI/UX Designer with over 5 years of experience architecting and delivering enterprise and startup web applications.",
         "I combine modern software engineering expertise (JavaScript/TypeScript, React, Node.js, and Cloud architecture) with strong visual design sensibility to craft solutions that are not only fast and secure, but also delightful to use.",
         "Outside of work, I actively contribute to open-source projects, write technical articles on web performance optimization, and mentor junior developers in local tech communities."
       ]
@@ -64,22 +64,22 @@ window.PORTFOLIO_DATA = {
     socials: [
       {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/aryapratama",
+        url: "https://linkedin.com/in/adealrizal",
         icon: "fa-brands fa-linkedin-in"
       },
       {
         name: "GitHub",
-        url: "https://github.com/aryapratama",
+        url: "https://github.com/AdeAl29",
         icon: "fa-brands fa-github"
       },
       {
         name: "Instagram",
-        url: "https://instagram.com/aryapratama.dev",
+        url: "https://instagram.com/adealrizal",
         icon: "fa-brands fa-instagram"
       },
       {
         name: "Dribbble",
-        url: "https://dribbble.com/aryapratama",
+        url: "https://dribbble.com/adealrizal",
         icon: "fa-brands fa-dribbble"
       }
     ],
@@ -484,8 +484,8 @@ window.PORTFOLIO_DATA = {
         en: "VP of Engineering, PT Nusantara Digital"
       },
       quote: {
-        id: "Arya adalah kombinasi langka antara engineer yang sangat kuat secara teknis dan desainer yang peduli pada detail pengalaman pengguna. Transformasi performa web yang ia pimpin berdampak langsung pada pertumbuhan bisnis kami.",
-        en: "Arya is a rare combination of a technically rigorous engineer and a designer who deeply cares about user experience details. The web performance transformation he led directly impacted our business growth."
+        id: "Ade adalah kombinasi langka antara engineer yang sangat kuat secara teknis dan desainer yang peduli pada detail pengalaman pengguna. Transformasi performa web yang ia pimpin berdampak langsung pada pertumbuhan bisnis kami.",
+        en: "Ade is a rare combination of a technically rigorous engineer and a designer who deeply cares about user experience details. The web performance transformation he led directly impacted our business growth."
       },
       rating: 5
     },
@@ -496,8 +496,8 @@ window.PORTFOLIO_DATA = {
         en: "Product Director, FinPulse Asia"
       },
       quote: {
-        id: "Bekerja bersama Arya sangat menyenangkan dan terstruktur. Ia selalu proaktif memberikan solusi UI/UX yang membuat fitur kompleks terasa sederhana bagi pengguna akhir kami.",
-        en: "Working with Arya is an absolute pleasure. He proactively proposes UI/UX solutions that make complex enterprise workflows feel effortless for our end users."
+        id: "Bekerja bersama Ade sangat menyenangkan dan terstruktur. Ia selalu proaktif memberikan solusi UI/UX yang membuat fitur kompleks terasa sederhana bagi pengguna akhir kami.",
+        en: "Working with Ade is an absolute pleasure. He proactively proposes UI/UX solutions that make complex enterprise workflows feel effortless for our end users."
       },
       rating: 5
     },
@@ -508,8 +508,8 @@ window.PORTFOLIO_DATA = {
         en: "Founder & CEO, OmniCart Commerce"
       },
       quote: {
-        id: "Sejak merombak platform e-commerce kami bersama Arya, waktu muat halaman turun drastis dan konversi transaksi mobile meningkat lebih dari 30% hanya dalam dua bulan pertama.",
-        en: "Since revamping our e-commerce storefront with Arya, page load times dropped dramatically and mobile checkout conversions grew by over 30% within the first two months."
+        id: "Sejak merombak platform e-commerce kami bersama Ade, waktu muat halaman turun drastis dan konversi transaksi mobile meningkat lebih dari 30% hanya dalam dua bulan pertama.",
+        en: "Since revamping our e-commerce storefront with Ade, page load times dropped dramatically and mobile checkout conversions grew by over 30% within the first two months."
       },
       rating: 5
     }
