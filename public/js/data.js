@@ -367,7 +367,7 @@ window.PORTFOLIO_DATA = {
         en: "PELOR is an Artificial Intelligence (AI) and gamification-based cultural promotion mobile application developed in 2025 to introduce the local heritage of Pulau Penyengat to the younger generation through an interactive and educational approach. The app features an interactive map of historical sites & stays, AI-powered scanning, an Adventure Rank & XP gamification system, and delivers real value for tourists, local communities (Gelis drivers & MSMEs), and government stakeholders."
       },
       tech: ["Android Studio", "Kotlin", "Jetpack Compose", "Artificial Intelligence (AI)", "Gamification"],
-      demoUrl: "#contact",
+      demoUrl: "https://drive.google.com/file/d/1Q1j-iP01h251l8_kVW4BCBH5XvN3Klc_/view?usp=sharing",
       repoUrl: "https://github.com/AdeAl29"
     }
   ],
