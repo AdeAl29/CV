@@ -490,6 +490,20 @@
           <div class="project-card__body">
             <h3 class="project-card__title">${proj.title}</h3>
             <p class="project-card__desc">${localize(proj.shortDesc)}</p>
+            ${
+              proj.gallery && proj.gallery.length > 1
+                ? `<div class="project-card__thumbs" aria-label="Galeri Foto Proyek">
+                    ${proj.gallery
+                      .map(
+                        (g, idx) => `
+                        <button type="button" class="project-thumb ${idx === 0 ? "active" : ""}" data-preview-src="${g.src}" title="${localize(g.caption)}">
+                          <img src="${g.src}" alt="${localize(g.caption)}" loading="lazy" />
+                        </button>`
+                      )
+                      .join("")}
+                   </div>`
+                : ""
+            }
             <div class="project-card__tags">
               ${proj.tech.slice(0, 4).map((tg) => `<span class="tech-tag">${tg}</span>`).join("")}
             </div>
@@ -520,8 +534,11 @@
     if (!proj) return;
 
     const modal = document.getElementById("project-modal");
-    document.getElementById("modal-image").src = proj.image;
-    document.getElementById("modal-image").alt = proj.title;
+    const modalImg = document.getElementById("modal-image");
+    const galleryEl = document.getElementById("modal-gallery");
+
+    modalImg.src = proj.image;
+    modalImg.alt = proj.title;
     document.getElementById("modal-category").textContent = localize(proj.categoryLabel);
     document.getElementById("modal-title").textContent = proj.title;
     document.getElementById("modal-desc").textContent = localize(proj.fullDesc);
@@ -530,6 +547,24 @@
       .join("");
     document.getElementById("modal-demo").href = proj.demoUrl;
     document.getElementById("modal-repo").href = proj.repoUrl;
+
+    if (galleryEl) {
+      if (proj.gallery && proj.gallery.length > 1) {
+        galleryEl.innerHTML = proj.gallery
+          .map(
+            (g, idx) => `
+            <button type="button" class="modal__gallery-btn ${idx === 0 ? "active" : ""}" data-modal-img="${g.src}" data-modal-caption="${localize(g.caption)}">
+              <img src="${g.src}" alt="${localize(g.caption)}" loading="lazy" />
+              <span>${localize(g.caption)}</span>
+            </button>`
+          )
+          .join("");
+        galleryEl.style.display = "grid";
+      } else {
+        galleryEl.innerHTML = "";
+        galleryEl.style.display = "none";
+      }
+    }
 
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
@@ -1148,6 +1183,30 @@
       const openModalBtn = e.target.closest("[data-open-modal]");
       if (openModalBtn) {
         openProjectModal(openModalBtn.getAttribute("data-open-modal"));
+      }
+
+      // Ganti foto preview langsung pada kartu proyek
+      const thumbBtn = e.target.closest("[data-preview-src]");
+      if (thumbBtn) {
+        const card = thumbBtn.closest(".project-card");
+        const mainImg = card?.querySelector(".project-card__img");
+        if (mainImg) {
+          mainImg.src = thumbBtn.getAttribute("data-preview-src");
+          card.querySelectorAll(".project-thumb").forEach((b) => b.classList.toggle("active", b === thumbBtn));
+        }
+      }
+
+      // Ganti foto preview di dalam Modal Detail Proyek
+      const modalGalleryBtn = e.target.closest("[data-modal-img]");
+      if (modalGalleryBtn) {
+        const modalImg = document.getElementById("modal-image");
+        if (modalImg) {
+          modalImg.src = modalGalleryBtn.getAttribute("data-modal-img");
+          modalImg.alt = modalGalleryBtn.getAttribute("data-modal-caption") || "";
+        }
+        document.querySelectorAll(".modal__gallery-btn").forEach((b) =>
+          b.classList.toggle("active", b === modalGalleryBtn)
+        );
       }
     });
 

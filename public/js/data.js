@@ -347,14 +347,24 @@ window.PORTFOLIO_DATA = {
       title: "PELOR — Aplikasi Promosi Budaya Berbasis AI & Gamifikasi",
       category: "mobile",
       categoryLabel: { id: "Aplikasi Android (2025)", en: "Android Application (2025)" },
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80",
+      image: "assets/pelor-mvp.jpg",
+      gallery: [
+        {
+          src: "assets/pelor-mvp.jpg",
+          caption: { id: "Fitur MVP Aplikasi PELOR (Peta Pulau Penyengat, AI Scan & Gamifikasi)", en: "PELOR MVP Features (Pulau Penyengat Map, AI Scan & Gamification)" }
+        },
+        {
+          src: "assets/pelor-value.jpg",
+          caption: { id: "Nilai Bagi Pengguna (Wisatawan, Driver Gelis & UMKM, Pemerintah)", en: "User Value Proposition (Tourists, Local Community & Stakeholders)" }
+        }
+      ],
       shortDesc: {
         id: "Aplikasi mobile promosi budaya Pulau Penyengat berbasis Artificial Intelligence (AI) dan gamifikasi dengan pendekatan interaktif dan edukatif.",
         en: "AI and gamification-powered cultural promotion mobile app introducing Pulau Penyengat heritage to younger generations interactively."
       },
       fullDesc: {
-        id: "PELOR merupakan aplikasi mobile promosi budaya berbasis Artificial Intelligence (AI) dan gamifikasi yang dikembangkan pada tahun 2025 untuk memperkenalkan budaya lokal Pulau Penyengat kepada generasi muda melalui pendekatan interaktif dan edukatif. Aplikasi ini dikembangkan menggunakan Android Studio dan Jetpack Compose dengan bahasa Kotlin, serta mengintegrasikan elemen AI untuk personalisasi konten dan gamifikasi guna meningkatkan keterlibatan pengguna. Proyek ini meraih penghargaan Best Project pada program Kampus Merdeka Mandiri Batch 8 di Infinite Learning.",
-        en: "PELOR is an Artificial Intelligence (AI) and gamification-based cultural promotion mobile application developed in 2025 to introduce the local heritage of Pulau Penyengat to the younger generation through an interactive and educational approach. Built with Android Studio, Kotlin, and Jetpack Compose, the project integrates AI elements for content personalization and gamification to boost user engagement. Awarded Best Project in the Kampus Merdeka Mandiri Batch 8 program at Infinite Learning."
+        id: "PELOR merupakan aplikasi mobile promosi budaya berbasis Artificial Intelligence (AI) dan gamifikasi yang dikembangkan pada tahun 2025 untuk memperkenalkan budaya lokal Pulau Penyengat kepada generasi muda melalui pendekatan interaktif dan edukatif. Aplikasi ini mencakup peta interaktif lokasi bersejarah & penginapan, fitur pemindaian berbasis AI, sistem Adventure Rank & XP gamifikasi, serta memberikan nilai nyata bagi wisatawan, komunitas lokal (Driver Gelis & UMKM), dan pemerintah/stakeholder.",
+        en: "PELOR is an Artificial Intelligence (AI) and gamification-based cultural promotion mobile application developed in 2025 to introduce the local heritage of Pulau Penyengat to the younger generation through an interactive and educational approach. The app features an interactive map of historical sites & stays, AI-powered scanning, an Adventure Rank & XP gamification system, and delivers real value for tourists, local communities (Gelis drivers & MSMEs), and government stakeholders."
       },
       tech: ["Android Studio", "Kotlin", "Jetpack Compose", "Artificial Intelligence (AI)", "Gamification"],
       demoUrl: "#contact",
