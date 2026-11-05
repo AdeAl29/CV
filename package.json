@@ -1,0 +1,14 @@
+{
+  "name": "arya-pratama-cv-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website CV & Portofolio Pribadi dengan Netlify Database & Functions",
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@netlify/database": "^2.0.1",
+    "@netlify/functions": "^6.1.0"
+  }
+}

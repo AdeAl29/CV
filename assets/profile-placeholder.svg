@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" rx="40" fill="url(#bgGrad)" />
+  <circle cx="400" cy="100" r="80" fill="#ffffff" fill-opacity="0.1" />
+  <circle cx="80" cy="400" r="120" fill="#ffffff" fill-opacity="0.08" />
+  <!-- Avatar Illustration -->
+  <path d="M110 500 C110 370 390 370 390 500 Z" fill="url(#suitGrad)" />
+  <!-- Shirt & Tie -->
+  <polygon points="220,395 280,395 250,480" fill="#f8fafc" />
+  <polygon points="243,415 257,415 262,485 250,500 238,485" fill="#6366f1" />
+  <!-- Neck -->
+  <rect x="222" y="320" width="56" height="65" rx="20" fill="#f1c27d" />
+  <!-- Head -->
+  <rect x="175" y="150" width="150" height="190" rx="70" fill="#ffdbac" />
+  <!-- Hair -->
+  <path d="M170 220 C165 135 235 120 275 125 C325 130 335 175 328 220 C320 185 295 165 245 170 C195 175 180 195 170 220 Z" fill="#1e293b" />
+  <!-- Glasses -->
+  <rect x="195" y="225" width="46" height="32" rx="8" fill="none" stroke="#1e293b" stroke-width="5" />
+  <rect x="259" y="225" width="46" height="32" rx="8" fill="none" stroke="#1e293b" stroke-width="5" />
+  <line x1="241" y1="238" x2="259" y2="238" stroke="#1e293b" stroke-width="5" />
+  <!-- Eyes -->
+  <circle cx="218" cy="241" r="5" fill="#1e293b" />
+  <circle cx="282" cy="241" r="5" fill="#1e293b" />
+  <!-- Smile -->
+  <path d="M225 290 Q250 312 275 290" fill="none" stroke="#1e293b" stroke-width="5" stroke-linecap="round" />
+</svg>
+

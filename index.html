@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Arya Pratama — Senior Full-Stack Web Developer & UI/UX Designer</title>
+  <meta name="title" content="Arya Pratama — Senior Full-Stack Web Developer & UI/UX Designer" />
+  <meta name="description" content="Portofolio resmi dan CV interaktif Arya Pratama. Spesialis pengembangan aplikasi web modern, arsitektur frontend, dan desain UI/UX berstandar global." />
+  <meta name="keywords" content="Web Developer, Full-Stack Developer, UI/UX Designer, Portofolio, CV Online, Frontend Engineer, Indonesia" />
+  <meta name="author" content="Arya Pratama" />
+  <meta name="theme-color" content="#6366f1" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aryapratama.dev/" />
+  <meta property="og:title" content="Arya Pratama — Senior Full-Stack Web Developer & UI/UX Designer" />
+  <meta property="og:description" content="Membangun produk digital berkinerja tinggi dengan desain elegan, kode terstruktur, dan pengalaman pengguna yang intuitif." />
+  <meta property="og:image" content="assets/profile-placeholder.svg" />
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Arya Pratama — Senior Full-Stack Web Developer & UI/UX Designer" />
+  <meta property="twitter:description" content="Membangun produk digital berkinerja tinggi dengan desain elegan, kode terstruktur, dan pengalaman pengguna yang intuitif." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts: Poppins (Heading) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Free CDN (Ikon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Aksesibilitas: Skip to Content -->
+  <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- Preloader Singkat -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo" id="preloader-initials">AP</div>
+      <div class="preloader__bar">
+        <div class="preloader__progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar di Atas Halaman -->
+  <div class="scroll-progress" role="progressbar" aria-label="Scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="scroll-progress__bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Custom Cursor Halus (Hanya aktif di Desktop via CSS & JS) -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" id="cursor-outline" aria-hidden="true"></div>
+
+  <!-- Toast Notification (Untuk feedback ganti tema, bahasa, dan Easter Egg) -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- ========================================================================
+       1. NAVBAR STICKY
+       ======================================================================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navigasi Utama">
+      <a href="#home" class="nav__logo" aria-label="Beranda">
+        <span class="nav__logo-badge" id="nav-initials">AP</span>
+        <span class="nav__logo-text" id="nav-name">Arya Pratama</span>
+      </a>
+
+      <!-- Menu Navigasi -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active" data-i18n="nav.home">Beranda</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link" data-i18n="nav.about">Tentang</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link" data-i18n="nav.skills">Keahlian</a></li>
+          <li class="nav__item"><a href="#resume" class="nav__link" data-i18n="nav.resume">Pengalaman</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link" data-i18n="nav.projects">Proyek</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link" data-i18n="nav.certs">Sertifikasi</a></li>
+          <li class="nav__item"><a href="#testimonials" class="nav__link" data-i18n="nav.testimonials">Testimoni</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link" data-i18n="nav.contact">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Tombol Aksi: Bahasa, Tema, Aksen Easter Egg, & Hamburger Mobile -->
+      <div class="nav__actions">
+        <button type="button" class="action-btn" id="lang-toggle" aria-label="Ganti Bahasa / Switch Language" title="Shortcut: L">
+          <span class="lang-code" id="lang-label">ID</span>
+        </button>
+
+        <button type="button" class="action-btn" id="accent-toggle" aria-label="Ganti Warna Aksen" title="Ganti Warna Aksen (Shortcut: C)">
+          <i class="fa-solid fa-palette" aria-hidden="true"></i>
+        </button>
+
+        <button type="button" class="action-btn" id="theme-toggle" aria-label="Ganti Mode Gelap atau Terang" title="Shortcut: T">
+          <i class="fa-solid fa-sun" id="theme-icon" aria-hidden="true"></i>
+        </button>
+
+        <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Buka Menu Navigasi" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         2. HERO SECTION
+         ====================================================================== -->
+    <section class="hero section" id="home">
+      <!-- Background Partikel Interaktif & Gradient Bergerak -->
+      <canvas id="hero-particles" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+      <div class="hero__container container grid">
+        <div class="hero__content reveal">
+          <span class="hero__greeting" data-i18n="hero.greeting">Halo, saya</span>
+          <h1 class="hero__title" id="hero-name">Arya Pratama</h1>
+
+          <div class="hero__role-wrapper">
+            <span data-i18n="hero.rolePrefix">Seorang </span>
+            <span id="typed-role" class="hero__typed"></span>
+          </div>
+
+          <p class="hero__tagline" id="hero-tagline">
+            Membangun produk digital berkinerja tinggi dengan desain elegan, kode terstruktur, dan pengalaman pengguna yang intuitif.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="assets/CV-Placeholder.pdf" download class="btn btn--primary" id="hero-download-cv">
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              <span data-i18n="hero.downloadCv">Download CV</span>
+            </a>
+            <button type="button" class="btn btn--outline" id="print-cv-btn">
+              <i class="fa-solid fa-print" aria-hidden="true"></i>
+              <span data-i18n="hero.printCv">Cetak CV</span>
+            </button>
+            <a href="#contact" class="btn btn--ghost">
+              <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              <span data-i18n="hero.contactMe">Hubungi Saya</span>
+            </a>
+          </div>
+
+          <div class="hero__socials" id="hero-socials" aria-label="Tautan Media Sosial">
+            <!-- Diisi otomatis dari js/data.js -->
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__photo-card tilt-card">
+            <div class="hero__photo-ring" aria-hidden="true"></div>
+            <img
+              src="assets/profile-placeholder.svg"
+              alt="Foto Profil Arya Pratama"
+              id="hero-photo"
+              class="hero__img"
+              width="420"
+              height="420"
+              fetchpriority="high"
+            />
+            <div class="hero__floating-badge hero__floating-badge--top">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <span>Clean Code</span>
+            </div>
+            <div class="hero__floating-badge hero__floating-badge--bottom">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              <span>99% Lighthouse</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Gulir ke bagian Tentang Saya">
+        <span class="hero__scroll-mouse"><span class="hero__scroll-wheel"></span></span>
+        <span class="hero__scroll-text" data-i18n="hero.scrollDown">Gulir ke bawah</span>
+      </a>
+    </section>
+
+    <!-- ======================================================================
+         3. TENTANG SAYA (ABOUT) & STATISTIK COUNT-UP & BAHASA
+         ====================================================================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__subtitle" data-i18n="about.subtitle">Perkenalan Singkat</span>
+          <h2 class="section__title" data-i18n="about.title">Tentang Saya</h2>
+        </div>
+
+        <div class="about__grid grid">
+          <!-- Kolom Bio & Info Singkat -->
+          <div class="about__bio-card glass-card reveal">
+            <h3 class="about__heading" data-i18n="about.bioHeading">
+              Membangun Solusi Web Modern dari Konsep hingga Produksi
+            </h3>
+            <div id="about-paragraphs" class="about__text">
+              <!-- Diisi otomatis dari js/data.js -->
+            </div>
+
+            <div class="about__info-list">
+              <div class="about__info-item">
+                <span class="about__info-label" data-i18n="about.labelAge">Usia</span>
+                <span class="about__info-value" id="about-age">26 Tahun</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label" data-i18n="about.labelLocation">Lokasi</span>
+                <span class="about__info-value" id="about-location">Jakarta Selatan, Indonesia</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label" data-i18n="about.labelStatus">Status</span>
+                <span class="about__info-value about__status-badge" id="about-status">Tersedia</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label" data-i18n="about.labelEmail">Email</span>
+                <a href="mailto:arya.pratama@email.com" class="about__info-value about__info-link" id="about-email">arya.pratama@email.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Statistik Count-Up & Kemampuan Bahasa -->
+          <div class="about__side">
+            <div class="stats__grid" id="stats-grid">
+              <!-- Diisi otomatis dari js/data.js -->
+            </div>
+
+            <div class="languages-card glass-card reveal">
+              <h3 class="languages-card__title">
+                <i class="fa-solid fa-language" aria-hidden="true"></i>
+                <span data-i18n="about.langTitle">Kemampuan Bahasa</span>
+              </h3>
+              <div class="languages-list" id="languages-list">
+                <!-- Diisi otomatis dari js/data.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SKILL SECTION (GRAFIK RADAR + PROGRESS BAR + FILTER KATEGORI)
+         ====================================================================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__subtitle" data-i18n="skills.subtitle">Kompetensi Teknis & Non-Teknis</span>
+          <h2 class="section__title" data-i18n="skills.title">Keahlian & Teknologi</h2>
+        </div>
+
+        <div class="skills__layout grid">
+          <!-- Grafik Radar Chart.js -->
+          <div class="skills__chart-card glass-card reveal">
+            <h3 class="skills__chart-title" data-i18n="skills.radarTitle">Peta Keseimbangan Kompetensi</h3>
+            <div class="skills__canvas-wrapper">
+              <canvas id="skillsRadarChart" aria-label="Grafik Radar Keahlian" role="img"></canvas>
+            </div>
+            <p class="skills__chart-caption" data-i18n="skills.radarCaption">
+              Visualisasi proporsi keahlian lintas bidang rekayasa perangkat lunak dan desain produk.
+            </p>
+          </div>
+
+          <!-- Daftar Skill dengan Tab Filter & Progress Bar Animasi -->
+          <div class="skills__list-card glass-card reveal">
+            <div class="filter-tabs" id="skills-tabs" role="tablist" aria-label="Filter Kategori Keahlian">
+              <button type="button" class="filter-btn active" data-skill-filter="all" role="tab" aria-selected="true" data-i18n="skills.filterAll">Semua</button>
+              <button type="button" class="filter-btn" data-skill-filter="frontend" role="tab" aria-selected="false" data-i18n="skills.filterFrontend">Frontend</button>
+              <button type="button" class="filter-btn" data-skill-filter="backend" role="tab" aria-selected="false" data-i18n="skills.filterBackend">Backend</button>
+              <button type="button" class="filter-btn" data-skill-filter="tools" role="tab" aria-selected="false" data-i18n="skills.filterTools">Tools & DevOps</button>
+              <button type="button" class="filter-btn" data-skill-filter="soft" role="tab" aria-selected="false" data-i18n="skills.filterSoft">Soft Skill</button>
+            </div>
+
+            <div class="skills__bars" id="skills-bars-container">
+              <!-- Diisi otomatis dari js/data.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. PENGALAMAN & PENDIDIKAN (TIMELINE INTERAKTIF EXPAND/COLLAPSE)
+         ====================================================================== -->
+    <section class="resume section" id="resume">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__subtitle" data-i18n="resume.subtitle">Rekam Jejak Karir & Akademik</span>
+          <h2 class="section__title" data-i18n="resume.title">Pengalaman & Pendidikan</h2>
+          <div class="resume__controls">
+            <button type="button" class="btn btn--sm btn--ghost" id="toggle-all-timeline">
+              <i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i>
+              <span id="toggle-all-timeline-text" data-i18n="resume.expandAll">Buka Semua</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="resume__grid grid">
+          <!-- Kolom Pengalaman Kerja -->
+          <div class="resume__column reveal">
+            <h3 class="resume__column-title">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              <span data-i18n="resume.expHeading">Pengalaman Kerja & Organisasi</span>
+            </h3>
+            <div class="timeline" id="experience-timeline">
+              <!-- Diisi otomatis dari js/data.js -->
+            </div>
+          </div>
+
+          <!-- Kolom Pendidikan -->
+          <div class="resume__column reveal">
+            <h3 class="resume__column-title">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <span data-i18n="resume.eduHeading">Riwayat Pendidikan</span>
+            </h3>
+            <div class="timeline" id="education-timeline">
+              <!-- Diisi otomatis dari js/data.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. PROYEK / PORTOFOLIO (FILTER KATEGORI + 3D TILT + MODAL DETAIL)
+         ====================================================================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__subtitle" data-i18n="projects.subtitle">Karya Pilihan</span>
+          <h2 class="section__title" data-i18n="projects.title">Portofolio Proyek</h2>
+        </div>
+
+        <div class="filter-tabs filter-tabs--center reveal" id="projects-tabs" role="tablist" aria-label="Filter Kategori Proyek">
+          <button type="button" class="filter-btn active" data-project-filter="all" role="tab" aria-selected="true" data-i18n="projects.filterAll">Semua</button>
+          <button type="button" class="filter-btn" data-project-filter="web" role="tab" aria-selected="false" data-i18n="projects.filterWeb">Aplikasi Web</button>
+          <button type="button" class="filter-btn" data-project-filter="uiux" role="tab" aria-selected="false" data-i18n="projects.filterUiux">UI/UX & Design</button>
+          <button type="button" class="filter-btn" data-project-filter="data" role="tab" aria-selected="false" data-i18n="projects.filterData">Data & API</button>
+        </div>
+
+        <div class="projects__grid grid" id="projects-grid">
+          <!-- Diisi otomatis dari js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. SERTIFIKASI & PENGHARGAAN
+         ====================================================================== -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__subtitle" data-i18n="certs.subtitle">Kredensial & Pencapaian</span>
+          <h2 class="section__title" data-i18n="certs.title">Sertifikasi & Penghargaan</h2>
+        </div>
+
+        <div class="certs__grid grid" id="certs-grid">
+          <!-- Diisi otomatis dari js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. TESTIMONI (SLIDER OTOMATIS & INTERAKTIF)
+         ====================================================================== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__subtitle" data-i18n="testimonials.subtitle">Apa Kata Mereka</span>
+          <h2 class="section__title" data-i18n="testimonials.title">Testimoni Klien & Rekan</h2>
+        </div>
+
+        <div class="testimonial-slider glass-card reveal" id="testimonial-slider">
+          <div class="testimonial-slider__track" id="testimonial-track" aria-live="polite">
+            <!-- Diisi otomatis dari js/data.js -->
+          </div>
+
+          <div class="testimonial-slider__controls">
+            <button type="button" class="slider-btn" id="testi-prev" aria-label="Testimoni sebelumnya">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="testimonial-slider__dots" id="testi-dots" role="tablist" aria-label="Pilih slide testimoni"></div>
+            <button type="button" class="slider-btn" id="testi-next" aria-label="Testimoni berikutnya">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. KONTAK (VALIDASI FORM JS, WHATSAPP CTA, & PETA EMBED)
+         ====================================================================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__subtitle" data-i18n="contact.subtitle">Mari Berkolaborasi</span>
+          <h2 class="section__title" data-i18n="contact.title">Hubungi Saya</h2>
+        </div>
+
+        <div class="contact__grid grid">
+          <!-- Info Kontak, Tombol WhatsApp, & Google Maps -->
+          <div class="contact__info glass-card reveal">
+            <h3 class="contact__card-title" data-i18n="contact.infoTitle">Informasi Kontak</h3>
+            <p class="contact__desc" data-i18n="contact.infoDesc">
+              Tertarik mendiskusikan proyek baru, peluang kerja sama, atau sekadar menyapa? Jangan ragu menghubungi saya melalui formulir atau kanal langsung di bawah ini.
+            </p>
+
+            <div class="contact__items">
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact__label" data-i18n="contact.emailLabel">Email</span>
+                  <a href="mailto:arya.pratama@email.com" class="contact__value" id="contact-email">arya.pratama@email.com</a>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact__label" data-i18n="contact.waLabel">WhatsApp</span>
+                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="contact__value" id="contact-wa">+62 812-3456-7890</a>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact__label" data-i18n="contact.locLabel">Lokasi</span>
+                  <span class="contact__value" id="contact-location">Jakarta Selatan, Indonesia</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" id="contact-wa-btn">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span data-i18n="contact.waCta">Chat via WhatsApp Sekarang</span>
+            </a>
+
+            <div class="contact__map-wrapper">
+              <iframe
+                id="contact-map"
+                title="Peta Lokasi Jakarta Selatan"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.8252646691!2d106.7380865!3d-6.2849775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sSouth%20Jakarta%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Form Kontak dengan Validasi JavaScript -->
+          <div class="contact__form-card glass-card reveal">
+            <h3 class="contact__card-title" data-i18n="contact.formTitle">Kirim Pesan Langsung</h3>
+            <form id="contact-form" class="contact__form" novalidate>
+              <div class="form__group">
+                <label for="name" class="form__label" data-i18n="contact.nameLabel">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form__input"
+                  placeholder="Masukkan nama Anda"
+                  data-i18n-placeholder="contact.namePlaceholder"
+                  required
+                  autocomplete="name"
+                />
+                <span class="form__error" id="error-name" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="form__label" data-i18n="contact.emailInputLabel">Alamat Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="nama@email.com"
+                  data-i18n-placeholder="contact.emailPlaceholder"
+                  required
+                  autocomplete="email"
+                />
+                <span class="form__error" id="error-email" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label for="subject" class="form__label" data-i18n="contact.subjectLabel">Subjek</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form__input"
+                  placeholder="Diskusi Proyek / Tawaran Kerja"
+                  data-i18n-placeholder="contact.subjectPlaceholder"
+                  required
+                />
+                <span class="form__error" id="error-subject" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label" data-i18n="contact.messageLabel">Pesan Anda</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="form__input form__textarea"
+                  placeholder="Tuliskan detail kebutuhan atau pesan Anda..."
+                  data-i18n-placeholder="contact.messagePlaceholder"
+                  required
+                ></textarea>
+                <span class="form__error" id="error-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                <span data-i18n="contact.submitBtn">Kirim Pesan</span>
+              </button>
+
+              <div id="form-status" class="form__status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       MODAL DETAIL PROYEK
+       ======================================================================== -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__content glass-card">
+      <button type="button" class="modal__close" id="modal-close" aria-label="Tutup detail proyek">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+
+      <div class="modal__image-wrapper">
+        <img src="" alt="" id="modal-image" class="modal__img" loading="lazy" />
+        <span class="modal__badge" id="modal-category"></span>
+      </div>
+
+      <div class="modal__body">
+        <h3 class="modal__title" id="modal-title">Judul Proyek</h3>
+        <p class="modal__desc" id="modal-desc"></p>
+
+        <div class="modal__tech-section">
+          <h4 class="modal__tech-heading" data-i18n="projects.modalTech">Teknologi yang Digunakan:</h4>
+          <div class="modal__tech-list" id="modal-tech"></div>
+        </div>
+
+        <div class="modal__actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--primary" id="modal-demo">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            <span data-i18n="projects.liveDemo">Demo Langsung</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--outline" id="modal-repo">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span data-i18n="projects.sourceCode">Kode Sumber</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       10. FOOTER & TOMBOL BACK-TO-TOP
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-badge" id="footer-initials">AP</span>
+          <span class="nav__logo-text" id="footer-name">Arya Pratama</span>
+        </a>
+        <p class="footer__hint" data-i18n="footer.shortcutHint">
+          Tips: Tekan tombol T pada keyboard untuk mengganti tema, atau L untuk bahasa.
+        </p>
+      </div>
+
+      <div class="footer__socials" id="footer-socials" aria-label="Tautan Media Sosial Footer">
+        <!-- Diisi otomatis dari js/data.js -->
+      </div>
+
+      <div class="footer__copy">
+        &copy; <span id="footer-year">2026</span> <strong id="footer-copy-name">Arya Pratama</strong>.
+        <span data-i18n="footer.rights">Seluruh hak cipta dilindungi.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol Back to Top -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman" title="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Library Ringan via CDN: Typed.js (Efek Mengetik) & Chart.js (Grafik Radar Skill) -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+
+  <!-- Data & Main Script -->
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
