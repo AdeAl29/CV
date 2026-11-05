@@ -235,7 +235,9 @@
           (st) => `
           <div class="stat-card glass-card tilt-card">
             <div class="stat-card__number">
-              <span class="stat-counter" data-target="${st.value}">${state.statsCounted ? st.value : 0}</span>${st.suffix || ""}
+              <span class="stat-counter" data-target="${st.value}" data-display="${st.displayValue || ""}">${
+                state.statsCounted ? (st.displayValue || st.value) : 0
+              }</span>${st.suffix || ""}
             </div>
             <div class="stat-card__label">${localize(st.label)}</div>
           </div>`
@@ -646,6 +648,12 @@
       langLabel.textContent = lang.toUpperCase();
     }
 
+    // Sesuaikan link Download CV sesuai bahasa (Ade Alrizal.pdf untuk ID, CV - 2.0.pdf untuk EN)
+    const cvBtn = document.getElementById("hero-download-cv");
+    if (cvBtn && DATA.config.cvPdfUrlByLang && DATA.config.cvPdfUrlByLang[lang]) {
+      cvBtn.href = DATA.config.cvPdfUrlByLang[lang];
+    }
+
     // Terjemahkan semua elemen statis dengan atribut data-i18n
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
@@ -728,8 +736,9 @@
     const counters = document.querySelectorAll(".stat-counter");
     counters.forEach((counter) => {
       const target = parseInt(counter.getAttribute("data-target"), 10) || 0;
+      const finalDisplay = counter.getAttribute("data-display");
       if (prefersReducedMotion) {
-        counter.textContent = target;
+        counter.textContent = finalDisplay || target;
         return;
       }
       const duration = 1400;
@@ -739,11 +748,12 @@
         const elapsed = now - startTime;
         const progress = Math.min(elapsed / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3); // Ease-out cubic
-        counter.textContent = Math.floor(eased * target);
+        const currentVal = Math.floor(eased * target);
         if (progress < 1) {
+          counter.textContent = finalDisplay ? (currentVal / 100).toFixed(2) : currentVal;
           requestAnimationFrame(updateCount);
         } else {
-          counter.textContent = target;
+          counter.textContent = finalDisplay || target;
         }
       }
       requestAnimationFrame(updateCount);
