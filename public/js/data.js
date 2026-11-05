@@ -20,9 +20,9 @@ window.PORTFOLIO_DATA = {
 
   // 2. DATA PROFIL PRIBADI
   profile: {
-    name: "Ade Alrizal",
+    name: "Ade Alrizal, S.T.",
     initials: "AA",
-    photo: "assets/profile.jpg",
+    photo: "assets/profile-soft.jpg",
     age: 22,
     email: "adealrizal15@gmail.com",
     whatsapp: "6285199847664", // Kode negara tanpa tanda +
@@ -37,32 +37,32 @@ window.PORTFOLIO_DATA = {
     },
     roles: {
       id: [
+        "Software Engineer",
         "Mobile Developer",
         "Android Developer",
-        "Software Engineer",
-        "Kotlin & Jetpack Compose Enthusiast"
+        "Kotlin & Jetpack Compose Specialist"
       ],
       en: [
+        "Software Engineer",
         "Mobile Developer",
         "Android Developer",
-        "Software Engineer",
-        "Kotlin & Jetpack Compose Enthusiast"
+        "Kotlin & Jetpack Compose Specialist"
       ]
     },
     tagline: {
-      id: "Mobile Developer dengan spesialisasi pengembangan Android yang berfokus membangun aplikasi mobile yang inovatif, intuitif, dan ramah pengguna.",
-      en: "Mobile Developer specializing in Android development, passionate about building innovative, intuitive, and user-friendly mobile applications."
+      id: "Lulusan S1 Teknik Informatika (S.T.) — IPK 3,79/4,00 | TOEFL 437. Spesialis pengembangan aplikasi Android (Kotlin, Java, Jetpack Compose) berbasis AI & Gamifikasi.",
+      en: "Bachelor of Informatics Engineering (S.T.) — GPA 3.79/4.00 | TOEFL 437. Specializing in Android development (Kotlin, Java, Jetpack Compose) with AI & Gamification."
     },
     about: {
       id: [
-        "Saya merupakan lulusan Sarjana Teknik Informatika dari Universitas Islam Sumatera Utara dengan IPK 3,79/4,00. Saya memiliki fokus pada bidang Mobile Development, khususnya pengembangan aplikasi Android menggunakan Kotlin, Java, dan Jetpack Compose.",
-        "Memiliki pengalaman dalam pengembangan aplikasi mobile melalui program magang dan proyek kolaboratif, termasuk memperbaiki bug, menguji fitur, meningkatkan stabilitas aplikasi, serta mengembangkan antarmuka pengguna yang responsif.",
-        "Saya juga memiliki ketertarikan terhadap pengembangan aplikasi yang mengintegrasikan teknologi Artificial Intelligence (AI) dan gamifikasi. Saya senantiasa berupaya mengembangkan kemampuan teknis dan menciptakan solusi digital yang inovatif, efisien, serta memberikan pengalaman pengguna yang baik."
+        "Saya merupakan lulusan Sarjana Teknik Informatika (S.T.) dari Universitas Islam Sumatera Utara (UISU) dengan IPK 3,79 / 4,00 dan skor TOEFL Prediction 437. Penelitian skripsi saya berjudul “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”.",
+        "Saya memiliki fokus utama pada bidang Mobile Development, khususnya pengembangan aplikasi Android menggunakan Kotlin, Java, dan Jetpack Compose. Berpengalaman melalui pekerjaan profesional, program magang Kampus Merdeka Mandiri, serta proyek kolaboratif dalam memperbaiki bug, menguji fitur, meningkatkan stabilitas aplikasi, serta merancang antarmuka pengguna yang responsif.",
+        "Saya juga memiliki ketertarikan mendalam terhadap pengembangan aplikasi yang mengintegrasikan teknologi Artificial Intelligence (AI) dan gamifikasi untuk menciptakan solusi digital yang inovatif, efisien, dan berdampak nyata bagi pengguna."
       ],
       en: [
-        "I hold a Bachelor's degree in Informatics Engineering from Universitas Islam Sumatera Utara with a GPA of 3.79/4.00. I specialize in Mobile Development, focusing on building Android applications using Kotlin, Java, and Jetpack Compose.",
-        "I have hands-on experience in mobile app development through internship programs and collaborative projects, including debugging, feature testing, improving application stability, and crafting responsive user interfaces.",
-        "I am also deeply interested in building mobile applications that integrate Artificial Intelligence (AI) and gamification. I continuously strive to grow my technical skills and deliver digital solutions that are innovative, efficient, and provide an outstanding user experience."
+        "I hold a Bachelor's degree in Informatics Engineering (S.T.) from Universitas Islam Sumatera Utara (UISU) with a GPA of 3.79 / 4.00 and a TOEFL Prediction score of 437. My undergraduate thesis is titled “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa” (Gamification-Based Habit Tracker App Using the Weighted Scoring Algorithm to Improve Student Productivity).",
+        "I specialize in Mobile Development, focusing on building Android applications using Kotlin, Java, and Jetpack Compose. I have practical experience across industry roles, Kampus Merdeka Mandiri internships, and collaborative projects—covering debugging, feature testing, app stability optimization, and responsive UI engineering.",
+        "I am passionate about building mobile applications that integrate Artificial Intelligence (AI) and gamification to deliver innovative, efficient, and user-centric digital solutions."
       ]
     },
     socials: [
@@ -89,20 +89,20 @@ window.PORTFOLIO_DATA = {
     ],
     stats: [
       {
-        value: 2024,
-        suffix: "",
-        label: { id: "Fokus Mobile Dev Sejak", en: "Mobile Dev Focus Since" }
-      },
-      {
         value: 379,
         displayValue: "3.79",
         suffix: "/4.0",
         label: { id: "IPK S1 Teknik Informatika", en: "Informatics GPA" }
       },
       {
-        value: 1,
+        value: 437,
         suffix: "",
-        label: { id: "Proyek Unggulan & Tim AI", en: "Featured AI & Mobile Project" }
+        label: { id: "Skor TOEFL Prediction", en: "TOEFL Prediction Score" }
+      },
+      {
+        value: 2024,
+        suffix: "",
+        label: { id: "Fokus Mobile Dev Sejak", en: "Mobile Dev Focus Since" }
       },
       {
         value: 1,
@@ -113,17 +113,17 @@ window.PORTFOLIO_DATA = {
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509740.6698702515!2d98.4900055!3d3.4215995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30313b00523c7791%3A0x3039d80b220cbd0!2sDeli%20Serdang%20Regency%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
   },
 
-  // 3. DATA SKILL (Dikelompokkan: mobile, tools, soft)
+  // 3. DATA SKILL (Hanya Hard Skills & Software Skills, tanpa Soft Skills)
   skills: {
     radarSummary: {
       labels: {
-        id: ["Android Dev", "Kotlin & Compose", "Java & Flutter", "UI/UX Mobile", "Tools (Studio/Git)", "Soft Skills & Tim"],
-        en: ["Android Dev", "Kotlin & Compose", "Java & Flutter", "Mobile UI/UX", "Tools (Studio/Git)", "Soft Skills & Team"]
+        id: ["Android Dev", "Kotlin", "Jetpack Compose", "Java & Flutter", "Android Studio & Git", "UI/UX & Figma"],
+        en: ["Android Dev", "Kotlin", "Jetpack Compose", "Java & Flutter", "Android Studio & Git", "UI/UX & Figma"]
       },
-      values: [85, 80, 68, 65, 80, 86]
+      values: [85, 80, 80, 70, 85, 65]
     },
     items: [
-      // Mobile Development
+      // Mobile Development (Hard Skills)
       { name: "Android Development", level: 85, category: "mobile", icon: "fa-brands fa-android" },
       { name: "Kotlin", level: 80, category: "mobile", icon: "fa-solid fa-code" },
       { name: "Jetpack Compose", level: 80, category: "mobile", icon: "fa-solid fa-layer-group" },
@@ -134,39 +134,7 @@ window.PORTFOLIO_DATA = {
       // Tools & Software
       { name: "Android Studio", level: 85, category: "tools", icon: "fa-solid fa-laptop-code" },
       { name: "Git & GitHub", level: 75, category: "tools", icon: "fa-brands fa-git-alt" },
-      { name: "Figma", level: 65, category: "tools", icon: "fa-brands fa-figma" },
-
-      // Soft Skills
-      {
-        name: { id: "Tanggung Jawab (Responsibility)", en: "Responsibility" },
-        level: 90,
-        category: "soft",
-        icon: "fa-solid fa-shield-halved"
-      },
-      {
-        name: { id: "Pemecahan Masalah (Problem Solving)", en: "Problem Solving" },
-        level: 85,
-        category: "soft",
-        icon: "fa-solid fa-lightbulb"
-      },
-      {
-        name: { id: "Kemampuan Adaptasi (Adaptability)", en: "Adaptability" },
-        level: 85,
-        category: "soft",
-        icon: "fa-solid fa-arrows-rotate"
-      },
-      {
-        name: { id: "Kerja Tim (Teamwork)", en: "Teamwork" },
-        level: 85,
-        category: "soft",
-        icon: "fa-solid fa-users"
-      },
-      {
-        name: { id: "Manajemen Waktu (Time Management)", en: "Time Management" },
-        level: 80,
-        category: "soft",
-        icon: "fa-solid fa-clock"
-      }
+      { name: "Figma", level: 65, category: "tools", icon: "fa-brands fa-figma" }
     ]
   },
 
@@ -293,24 +261,26 @@ window.PORTFOLIO_DATA = {
     {
       id: "edu-1",
       degree: {
-        id: "S1 Teknik Informatika",
-        en: "Bachelor of Informatics Engineering (S1)"
+        id: "S1 Teknik Informatika (S.T.)",
+        en: "Bachelor of Informatics Engineering (S.T.)"
       },
-      institution: "Universitas Islam Sumatera Utara (UISU)",
+      institution: "Universitas Islam Sumatera Utara (UISU) — Medan",
       period: "2022 – 2026",
-      gpa: "3,79 / 4,00",
+      gpa: "3,79 / 4,00 | TOEFL: 437",
       summary: {
-        id: "Fokus pada Rekayasa Perangkat Lunak, Pengembangan Aplikasi Mobile (Android), serta integrasi teknologi cerdas.",
-        en: "Focused on Software Engineering, Mobile Application Development (Android), and intelligent technology integration."
+        id: "Judul Skripsi: “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”.",
+        en: "Undergraduate Thesis: “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa” (Gamification-Based Habit Tracker App Using Weighted Scoring Algorithm)."
       },
       highlights: {
         id: [
-          "Lulusan Sarjana Teknik Informatika dengan pencapaian IPK 3,79 / 4,00.",
-          "Aktif mengikuti kegiatan pengembangan kompetensi Mobile Programming bersama Codecampus Community dan Prodi Teknik Informatika UISU."
+          "Lulusan Sarjana Teknik Informatika (S.T.) dengan IPK 3,79 / 4,00.",
+          "Skor TOEFL Prediction Test: 437.",
+          "Skripsi: Merancang dan membangun aplikasi Habit Tracker berbasis gamifikasi dengan algoritma Weighted Scoring untuk meningkatkan produktivitas mahasiswa."
         ],
         en: [
-          "Graduated with a Bachelor's degree in Informatics Engineering achieving a GPA of 3.79 / 4.00.",
-          "Actively participated in Mobile Programming competency development with Codecampus Community and UISU Informatics department."
+          "Graduated with a Bachelor's degree in Informatics Engineering (S.T.) with a GPA of 3.79 / 4.00.",
+          "TOEFL Prediction Test Score: 437.",
+          "Thesis: Engineered a gamification-based Habit Tracker application implementing the Weighted Scoring algorithm to boost student productivity."
         ]
       }
     },
@@ -391,12 +361,12 @@ window.PORTFOLIO_DATA = {
       badge: { id: "Sertifikasi Magang & Studi", en: "Internship Certificate" }
     },
     {
-      title: "TOEFL Prediction Test",
+      title: "TOEFL Prediction Test — Skor 437",
       issuer: "English Proficiency Assessment",
-      year: "Tersertifikasi",
+      year: "Score: 437",
       credentialUrl: "https://www.linkedin.com/in/ade-alrizal-715899345/",
       icon: "fa-solid fa-language",
-      badge: { id: "Sertifikasi Bahasa Inggris", en: "English Proficiency" }
+      badge: { id: "Sertifikasi Bahasa Inggris (Skor 437)", en: "English Proficiency (Score 437)" }
     }
   ],
 
@@ -409,34 +379,34 @@ window.PORTFOLIO_DATA = {
     },
     {
       name: { id: "Bahasa Inggris", en: "English" },
-      level: { id: "Aktif (TOEFL Prediction Certified)", en: "Active (TOEFL Prediction Certified)" },
+      level: { id: "TOEFL Prediction Score: 437", en: "TOEFL Prediction Score: 437" },
       percent: 80
     }
   ],
 
-  // 9. HIGHLIGHT KOMPETENSI & PENCAPAIAN (Ditampilkan pada bagian Sorotan/Testimoni)
+  // 9. REFERENSI DOSEN & HIGHLIGHT PENCAPAIAN
   testimonials: [
     {
-      name: "Pencapaian Proyek PELOR (2025)",
+      name: "Tasliyah Haramaini, S.Si., M.Kom.",
       role: {
-        id: "Best Project Award — Infinite Learning (Kampus Merdeka Mandiri Batch 8)",
-        en: "Best Project Award — Infinite Learning (Kampus Merdeka Mandiri Batch 8)"
+        id: "Dosen Universitas Islam Sumatera Utara (UISU) • Telp/WA: 0852-6180-0106",
+        en: "Lecturer at Universitas Islam Sumatera Utara (UISU) • Tel/WA: +62 852-6180-0106"
       },
       quote: {
-        id: "Berhasil merancang dan mengembangkan aplikasi mobile PELOR berbasis AI dan gamifikasi untuk pelestarian budaya Pulau Penyengat menggunakan Kotlin & Jetpack Compose bersama tim lintas disiplin.",
-        en: "Successfully engineered the PELOR mobile application powered by AI and gamification to promote Pulau Penyengat cultural heritage using Kotlin & Jetpack Compose in a cross-functional team."
+        id: "Referensi Akademik — Program Studi S1 Teknik Informatika, Fakultas Teknik, Universitas Islam Sumatera Utara (UISU).",
+        en: "Academic Reference — Informatics Engineering Study Program, Universitas Islam Sumatera Utara (UISU)."
       },
       rating: 5
     },
     {
-      name: "Fokus Kualitas & Stabilitas Aplikasi",
+      name: "Rachmat Aulia, S.Kom., M.Sc.IT.",
       role: {
-        id: "Mobile Developer — PT. Kinema Syntrans Multimedia",
-        en: "Mobile Developer — PT. Kinema Syntrans Multimedia"
+        id: "Dosen Universitas Islam Sumatera Utara (UISU) • Telp/WA: 0813-1507-3770",
+        en: "Lecturer at Universitas Islam Sumatera Utara (UISU) • Tel/WA: +62 813-1507-3770"
       },
       quote: {
-        id: "Berpengalaman menangani perbaikan bug, pengujian fitur baru, serta peningkatan stabilitas dan responsivitas antarmuka aplikasi pada berbagai perangkat Android.",
-        en: "Experienced in resolving bugs, testing new features, and enhancing application stability and UI responsiveness across diverse Android devices."
+        id: "Referensi Akademik — Program Studi S1 Teknik Informatika, Fakultas Teknik, Universitas Islam Sumatera Utara (UISU).",
+        en: "Academic Reference — Informatics Engineering Study Program, Universitas Islam Sumatera Utara (UISU)."
       },
       rating: 5
     }

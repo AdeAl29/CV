@@ -274,7 +274,6 @@
               <button type="button" class="filter-btn active" data-skill-filter="all" role="tab" aria-selected="true" data-i18n="skills.filterAll">Semua</button>
               <button type="button" class="filter-btn" data-skill-filter="mobile" role="tab" aria-selected="false" data-i18n="skills.filterFrontend">Mobile Dev</button>
               <button type="button" class="filter-btn" data-skill-filter="tools" role="tab" aria-selected="false" data-i18n="skills.filterTools">Tools & Software</button>
-              <button type="button" class="filter-btn" data-skill-filter="soft" role="tab" aria-selected="false" data-i18n="skills.filterSoft">Soft Skills</button>
             </div>
 
             <div class="skills__bars" id="skills-bars-container">
@@ -302,6 +301,17 @@
         </div>
 
         <div class="resume__grid grid">
+          <!-- Kolom Pendidikan (Paling Atas / Kiri untuk Fresh Graduate) -->
+          <div class="resume__column reveal">
+            <h3 class="resume__column-title">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <span data-i18n="resume.eduHeading">Riwayat Pendidikan</span>
+            </h3>
+            <div class="timeline" id="education-timeline">
+              <!-- Diisi otomatis dari js/data.js -->
+            </div>
+          </div>
+
           <!-- Kolom Pengalaman Kerja -->
           <div class="resume__column reveal">
             <h3 class="resume__column-title">
@@ -309,17 +319,6 @@
               <span data-i18n="resume.expHeading">Pengalaman Kerja & Organisasi</span>
             </h3>
             <div class="timeline" id="experience-timeline">
-              <!-- Diisi otomatis dari js/data.js -->
-            </div>
-          </div>
-
-          <!-- Kolom Pendidikan -->
-          <div class="resume__column reveal">
-            <h3 class="resume__column-title">
-              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
-              <span data-i18n="resume.eduHeading">Riwayat Pendidikan</span>
-            </h3>
-            <div class="timeline" id="education-timeline">
               <!-- Diisi otomatis dari js/data.js -->
             </div>
           </div>
