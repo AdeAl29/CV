@@ -22,7 +22,7 @@ window.PORTFOLIO_DATA = {
   profile: {
     name: "Ade Alrizal",
     initials: "AA",
-    photo: "assets/profile-placeholder.svg", // Ganti ke "assets/profile.jpg" atau "assets/profile.webp" jika foto asli sudah ditaruh di folder assets/
+    photo: "assets/profile.jpg",
     age: 22,
     email: "adealrizal15@gmail.com",
     whatsapp: "6285199847664", // Kode negara tanpa tanda +
