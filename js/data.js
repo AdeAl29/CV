@@ -350,34 +350,34 @@ window.PORTFOLIO_DATA = {
         {
           src: "assets/bitquest-main.jpg",
           caption: {
-            id: "Tampilan Utama BitQuest: Misi Harian, Status Karakter (Level, Streak, Konsistensi 30 Hari) & Pencapaian (Badges)",
-            en: "BitQuest Main Screens: Daily Quests, Character Status (Level, Streak, 30-Day Consistency) & Achievements (Badges)"
+            id: "Tampilan Utama BitQuest: Misi Harian, Status Karakter & Halaman Pencapaian (Badges)",
+            en: "BitQuest Main Screens: Daily Quests, Character Status & Achievements (Badges)"
           }
         },
         {
           src: "assets/bitquest-gameplay.jpg",
           caption: {
-            id: "Eksekusi Misi Harian, Swipe Action, Modal Input Misi & Riwayat Petualangan",
-            en: "Daily Quest Completion, Contextual Swipe, Quest Input Modal & Adventure Log"
+            id: "Fitur Misi Harian, Menu Manajemen Misi, Input Misi Baru & Riwayat Petualangan",
+            en: "Daily Quests, Quest Management Menu, New Quest Input & Adventure History"
           }
         },
         {
           src: "assets/bitquest-customization.jpg",
           caption: {
-            id: "Kustomisasi Karakter: Sistem Unlock Avatar Berjenjang, Ubah Nama Profil & Pilihan Gelar Karakter",
-            en: "Character Customization: Level-Gated Avatar Unlocks, Profile Name Editor & Character Titles"
+            id: "Kustomisasi Karakter: Pilihan Avatar, Ubah Nama Profil & Pilihan Gelar Karakter",
+            en: "Character Customization: Avatar Selection, Profile Name Editor & Character Titles"
           }
         }
       ],
       shortDesc: {
-        id: "Aplikasi Android Habit Tracker berbasis gamifikasi menggunakan algoritma Weighted Scoring untuk meningkatkan produktivitas dan konsistensi kebiasaan mahasiswa.",
-        en: "Gamified Android Habit Tracker app using the Weighted Scoring algorithm to boost student productivity and habit consistency."
+        id: "Aplikasi Android Habit Tracker berbasis gamifikasi untuk membantu mahasiswa membangun kebiasaan positif dan meningkatkan produktivitas harian.",
+        en: "Gamified Android Habit Tracker application designed to help students build positive habits and improve daily productivity."
       },
       fullDesc: {
-        id: "BitQuest adalah aplikasi pelacak kebiasaan (Habit Tracker) native Android berbasis gamifikasi yang dikembangkan menggunakan Kotlin, Jetpack Compose, arsitektur MVVM, dan Jetpack DataStore. Aplikasi ini menerapkan algoritma Weighted Scoring untuk memberikan poin pengalaman berdasarkan tingkat prioritas dan kesulitan tugas, sehingga memotivasi pengguna menyelesaikan target harian secara konsisten. Dilengkapi fitur Misi Harian, Status Karakter (Level, EXP Bar, Streak Harian, dan Grafik Konsistensi), Riwayat Petualangan, Kustomisasi Avatar & Gelar Karakter, serta Lencana Pencapaian (Badges).",
-        en: "BitQuest is a gamified native Android Habit Tracker application built with Kotlin, Jetpack Compose, MVVM architecture, and Jetpack DataStore. It applies the Weighted Scoring algorithm to award experience points based on task priority and difficulty, motivating users to stay consistent with their daily goals. Key features include Daily Quests, Character Status (Level, EXP Bar, Daily Streak, and Consistency Graph), Adventure History Log, Avatar & Character Title customization, and Achievement Badges."
+        id: "BitQuest adalah aplikasi pelacak kebiasaan (Habit Tracker) native Android berbasis gamifikasi yang dikembangkan menggunakan Kotlin, Jetpack Compose, arsitektur MVVM, dan Jetpack DataStore. Aplikasi ini dirancang untuk meningkatkan motivasi dan konsistensi pengguna dalam menyelesaikan aktivitas harian melalui pendekatan elemen permainan seperti Misi Harian, Status Karakter (Level, Streak Harian, dan Grafik Konsistensi), Riwayat Petualangan, Kustomisasi Avatar & Gelar Karakter, serta Lencana Pencapaian (Badges).",
+        en: "BitQuest is a gamified native Android Habit Tracker application built with Kotlin, Jetpack Compose, MVVM architecture, and Jetpack DataStore. Designed to boost user motivation and consistency in completing daily activities through game-like mechanics, it features Daily Quests, Character Status (Level, Daily Streak, and Consistency Graph), Adventure History, Avatar & Character Title customization, and Achievement Badges."
       },
-      tech: ["Kotlin", "Jetpack Compose", "MVVM Architecture", "Jetpack DataStore", "Weighted Scoring Algorithm", "Gamification"],
+      tech: ["Kotlin", "Jetpack Compose", "MVVM Architecture", "Jetpack DataStore", "Gamification"],
       demoUrl: "https://github.com/AdeAl29",
       repoUrl: "https://github.com/AdeAl29"
     }
