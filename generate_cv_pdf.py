@@ -140,7 +140,7 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
     )
 
     # CONTACT (Ditambah Kota Asal)
-    sy = draw_section_header_left(c, "CONTACT" if lang == "en" else "KONTAK", sx, sy)
+    sy = draw_section_header_left(c, "CONTACT", sx, sy)
     contacts = [
         "+62 851-9984-7664",
         "adealrizal15@gmail.com",
@@ -193,7 +193,7 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
     sy -= 10
 
     # CERTIFICATIONS (Termasuk Skor TOEFL 437)
-    sy = draw_section_header_left(c, "CERTIFICATIONS" if lang == "en" else "SERTIFIKASI", sx, sy)
+    sy = draw_section_header_left(c, "CERTIFICATIONS", sx, sy)
     certs = (
         [
             "<b>Best Project Award (PELOR)</b> – Infinite Learning (2025)",
@@ -213,7 +213,7 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
     sy -= 10
 
     # REFERENCES (Dicantumkan keterangan Dosen UISU)
-    sy = draw_section_header_left(c, "REFERENCES" if lang == "en" else "REFERENSI", sx, sy)
+    sy = draw_section_header_left(c, "REFERENCES", sx, sy)
     refs = [
         (
             "Tasliyah Haramaini, S.Si., M.Kom.",
@@ -283,7 +283,7 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
     )
 
     # 1. PROFILE
-    ry = draw_section_header_right(c, "PROFILE" if lang == "en" else "PROFIL", right_x, ry)
+    ry = draw_section_header_right(c, "PROFILE", right_x, ry)
     profile_str = (
         "Highly adaptable Informatics Engineering graduate (S.T.) with strong problem-solving and analytical thinking skills. Specializing in Android Mobile Development using Kotlin, Java, and Jetpack Compose. A responsible and continuous learner ready to deliver optimal contributions in a professional work environment."
         if lang == "en"
@@ -295,7 +295,7 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
     # 2. EDUCATION & ACADEMIC HIGHLIGHTS (Ditempatkan PALING ATAS setelah PROFILE untuk Fresh Graduate)
     ry = draw_section_header_right(
         c,
-        "EDUCATION & ACADEMIC HIGHLIGHTS" if lang == "en" else "PENDIDIKAN & CAPAIAN AKADEMIK",
+        "EDUCATION & ACADEMIC HIGHLIGHTS",
         right_x,
         ry,
     )
@@ -330,13 +330,13 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
         [
             "&bull; <b>Degree:</b> Bachelor of Informatics Engineering (S.T.) &nbsp;|&nbsp; <b>GPA: 3.79 / 4.00</b>",
             "&bull; <b>TOEFL Prediction Score:</b> <b>437</b>",
-            "&bull; <b>Undergraduate Thesis (BitQuest App):</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i> (Gamification-Based Habit Tracker App Using Weighted Scoring Algorithm).",
+            "&bull; <b>Undergraduate Thesis:</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i> (Gamification-Based Habit Tracker App Using Weighted Scoring Algorithm).",
         ]
         if lang == "en"
         else [
             "&bull; <b>Program Studi:</b> S1 Teknik Informatika (S.T.) &nbsp;|&nbsp; <b>IPK: 3,79 / 4,00</b>",
             "&bull; <b>Skor TOEFL Prediction:</b> <b>437</b>",
-            "&bull; <b>Judul Skripsi (Aplikasi BitQuest):</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i>.",
+            "&bull; <b>Judul Skripsi:</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i>.",
         ]
     )
     for ep in edu_points:
@@ -345,7 +345,7 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
     ry = (ry - box_h) - 18
 
     # 3. EXPERIENCE (Rincian dibuat per poin-poin / bullet list, bukan paragraf)
-    ry = draw_section_header_right(c, "EXPERIENCE" if lang == "en" else "PENGALAMAN", right_x, ry)
+    ry = draw_section_header_right(c, "EXPERIENCE", right_x, ry)
 
     experiences = (
         [
@@ -437,4 +437,6 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
 if __name__ == "__main__":
     build_cv("d:/Projek Web/CV/assets/CV - 2.0.pdf", lang="en", photo_path="d:/Projek Web/CV/assets/profile-soft.jpg")
     build_cv("d:/Projek Web/CV/assets/Ade Alrizal.pdf", lang="id", photo_path="d:/Projek Web/CV/assets/profile-soft.jpg")
+    build_cv("d:/Projek Web/CV/public/assets/CV - 2.0.pdf", lang="en", photo_path="d:/Projek Web/CV/assets/profile-soft.jpg")
+    build_cv("d:/Projek Web/CV/public/assets/Ade Alrizal.pdf", lang="id", photo_path="d:/Projek Web/CV/assets/profile-soft.jpg")
     print("PDF generated successfully.")

@@ -205,6 +205,12 @@
   function renderLocalizedProfile() {
     const p = DATA.profile;
 
+    const cvBtn = document.getElementById("hero-download-cv");
+    if (cvBtn) {
+      const pdfByLang = DATA.config.cvPdfUrlByLang && DATA.config.cvPdfUrlByLang[state.lang];
+      cvBtn.href = pdfByLang || DATA.config.cvPdfUrl || "assets/Ade Alrizal.pdf";
+    }
+
     const taglineEl = document.getElementById("hero-tagline");
     if (taglineEl) taglineEl.textContent = localize(p.tagline);
 
