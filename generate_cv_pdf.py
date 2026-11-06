@@ -330,13 +330,13 @@ def build_cv(output_path, lang="en", photo_path="assets/profile-soft.jpg"):
         [
             "&bull; <b>Degree:</b> Bachelor of Informatics Engineering (S.T.) &nbsp;|&nbsp; <b>GPA: 3.79 / 4.00</b>",
             "&bull; <b>TOEFL Prediction Score:</b> <b>437</b>",
-            "&bull; <b>Undergraduate Thesis:</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i> (Gamification-Based Habit Tracker App Using Weighted Scoring Algorithm to Improve Student Productivity).",
+            "&bull; <b>Undergraduate Thesis (BitQuest App):</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i> (Gamification-Based Habit Tracker App Using Weighted Scoring Algorithm).",
         ]
         if lang == "en"
         else [
             "&bull; <b>Program Studi:</b> S1 Teknik Informatika (S.T.) &nbsp;|&nbsp; <b>IPK: 3,79 / 4,00</b>",
             "&bull; <b>Skor TOEFL Prediction:</b> <b>437</b>",
-            "&bull; <b>Judul Skripsi:</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i>.",
+            "&bull; <b>Judul Skripsi (Aplikasi BitQuest):</b> <i>“Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”</i>.",
         ]
     )
     for ep in edu_points:

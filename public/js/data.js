@@ -268,19 +268,19 @@ window.PORTFOLIO_DATA = {
       period: "2022 – 2026",
       gpa: "3,79 / 4,00 | TOEFL: 437",
       summary: {
-        id: "Judul Skripsi: “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”.",
-        en: "Undergraduate Thesis: “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa” (Gamification-Based Habit Tracker App Using Weighted Scoring Algorithm)."
+        id: "Judul Skripsi (Aplikasi BitQuest): “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa”.",
+        en: "Undergraduate Thesis (BitQuest App): “Aplikasi Habit Tracker Berbasis Gamifikasi Menggunakan Algoritma Weighted Scoring untuk Meningkatkan Produktivitas Mahasiswa” (Gamification-Based Habit Tracker App Using Weighted Scoring Algorithm)."
       },
       highlights: {
         id: [
           "Lulusan Sarjana Teknik Informatika (S.T.) dengan IPK 3,79 / 4,00.",
           "Skor TOEFL Prediction Test: 437.",
-          "Skripsi: Merancang dan membangun aplikasi Habit Tracker berbasis gamifikasi dengan algoritma Weighted Scoring untuk meningkatkan produktivitas mahasiswa."
+          "Skripsi (BitQuest): Merancang dan membangun aplikasi Android Habit Tracker berbasis gamifikasi (Kotlin, Jetpack Compose, MVVM, Jetpack DataStore) dengan algoritma Weighted Scoring (UAT 90% Sangat Baik)."
         ],
         en: [
           "Graduated with a Bachelor's degree in Informatics Engineering (S.T.) with a GPA of 3.79 / 4.00.",
           "TOEFL Prediction Test Score: 437.",
-          "Thesis: Engineered a gamification-based Habit Tracker application implementing the Weighted Scoring algorithm to boost student productivity."
+          "Thesis (BitQuest): Engineered an Android gamification-based Habit Tracker app (Kotlin, Jetpack Compose, MVVM, Jetpack DataStore) implementing the Weighted Scoring algorithm (90% UAT satisfaction)."
         ]
       }
     },
@@ -338,6 +338,47 @@ window.PORTFOLIO_DATA = {
       },
       tech: ["Android Studio", "Kotlin", "Jetpack Compose", "Artificial Intelligence (AI)", "Gamification"],
       demoUrl: "https://drive.google.com/file/d/1Q1j-iP01h251l8_kVW4BCBH5XvN3Klc_/view?usp=sharing",
+      repoUrl: "https://github.com/AdeAl29"
+    },
+    {
+      id: "proj-bitquest",
+      title: "BitQuest — Aplikasi Habit Tracker Berbasis Gamifikasi",
+      category: "mobile",
+      categoryLabel: { id: "Aplikasi Android • Skripsi (2026)", en: "Android Application • Thesis (2026)" },
+      image: "assets/bitquest-main.jpg",
+      gallery: [
+        {
+          src: "assets/bitquest-main.jpg",
+          caption: {
+            id: "Tampilan Utama BitQuest: Misi Harian, Status Karakter (Level, Streak, Konsistensi 30 Hari) & Pencapaian (Badges)",
+            en: "BitQuest Main Screens: Daily Quests, Character Status (Level, Streak, 30-Day Consistency) & Achievements (Badges)"
+          }
+        },
+        {
+          src: "assets/bitquest-gameplay.jpg",
+          caption: {
+            id: "Eksekusi Misi 100%, Swipe Action, Modal Input Misi (Algoritma Weighted Scoring +10/+30/+50 XP) & Riwayat Petualangan",
+            en: "100% Quest Completion, Contextual Swipe, Quest Input Modal (Weighted Scoring +10/+30/+50 XP) & Adventure Log"
+          }
+        },
+        {
+          src: "assets/bitquest-customization.jpg",
+          caption: {
+            id: "Kustomisasi Karakter: Sistem Unlock Avatar Berjenjang, Ubah Nama Profil & Pilihan Gelar Karakter",
+            en: "Character Customization: Level-Gated Avatar Unlocks, Profile Name Editor & Character Titles"
+          }
+        }
+      ],
+      shortDesc: {
+        id: "Aplikasi Android Habit Tracker berbasis gamifikasi RPG menggunakan algoritma Weighted Scoring untuk meningkatkan produktivitas dan konsistensi mahasiswa.",
+        en: "RPG-gamified Android Habit Tracker app powered by the Weighted Scoring algorithm to boost student productivity and habit consistency."
+      },
+      fullDesc: {
+        id: "BitQuest adalah aplikasi pelacak kebiasaan (Habit Tracker) native Android berbasis gamifikasi yang dikembangkan menggunakan Kotlin, Jetpack Compose, arsitektur MVVM, dan Jetpack DataStore. Mengimplementasikan Algoritma Weighted Scoring yang memberikan bobot poin pengalaman proporsional berdasarkan tingkat kesulitan tugas (Ringan 1× = +10 XP, Sedang 3× = +30 XP, Berat 5× = +50 XP) guna mendorong penyelesaian tugas prioritas tinggi. Dilengkapi fitur Misi Harian, Status Karakter (Level, EXP Bar, Streak Harian, Grafik Konsistensi 30 Hari), Riwayat Petualangan, Kustomisasi Avatar & Gelar berjenjang, serta 11 Lencana Pencapaian (Badges). Teruji 100% valid pada Black Box Testing dan meraih skor 90% (Sangat Baik) pada pengujian User Acceptance Testing (UAT).",
+        en: "BitQuest is a gamified native Android Habit Tracker application built with Kotlin, Jetpack Compose, MVVM architecture, and Jetpack DataStore. It implements the Weighted Scoring Algorithm to award proportional experience points based on task difficulty weights (Light 1× = +10 XP, Medium 3× = +30 XP, Heavy 5× = +50 XP), incentivizing high-priority academic tasks. Key features include Daily Quests, Character Status (Level, EXP Bar, Daily Streak, 30-Day Consistency Heatmap), Adventure History Log, level-gated Avatar & Title customization, and 11 Achievement Badges. Validated with a 100% pass rate on Black Box Testing and a 90% (Excellent) score on User Acceptance Testing (UAT)."
+      },
+      tech: ["Kotlin", "Jetpack Compose", "MVVM Architecture", "Jetpack DataStore", "Weighted Scoring Algorithm", "Gamification"],
+      demoUrl: "https://github.com/AdeAl29",
       repoUrl: "https://github.com/AdeAl29"
     }
   ],
