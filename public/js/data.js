@@ -463,7 +463,7 @@ window.PORTFOLIO_DATA = {
         resume: "Pengalaman",
         projects: "Proyek",
         certs: "Sertifikasi",
-        testimonials: "Sorotan",
+        testimonials: "Referensi",
         contact: "Kontak"
       },
       hero: {
@@ -522,10 +522,10 @@ window.PORTFOLIO_DATA = {
         verifyBtn: "Lihat Profil LinkedIn"
       },
       testimonials: {
-        subtitle: "Pencapaian & Dedikasi",
-        title: "Sorotan Proyek & Pengalaman",
-        prevAria: "Sorotan sebelumnya",
-        nextAria: "Sorotan berikutnya"
+        subtitle: "Kontak Akademik",
+        title: "Referensi",
+        prevAria: "Referensi sebelumnya",
+        nextAria: "Referensi berikutnya"
       },
       contact: {
         subtitle: "Mari Berkolaborasi",
@@ -573,7 +573,7 @@ window.PORTFOLIO_DATA = {
         resume: "Experience",
         projects: "Projects",
         certs: "Certifications",
-        testimonials: "Highlights",
+        testimonials: "References",
         contact: "Contact"
       },
       hero: {
@@ -632,10 +632,10 @@ window.PORTFOLIO_DATA = {
         verifyBtn: "View LinkedIn Profile"
       },
       testimonials: {
-        subtitle: "Achievements & Dedication",
-        title: "Project & Career Highlights",
-        prevAria: "Previous highlight",
-        nextAria: "Next highlight"
+        subtitle: "Academic Contacts",
+        title: "References",
+        prevAria: "Previous reference",
+        nextAria: "Next reference"
       },
       contact: {
         subtitle: "Let's Collaborate",
